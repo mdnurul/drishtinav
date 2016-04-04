@@ -30,17 +30,16 @@
         android:text="------"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_below="@+id/btnSpeak"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/getLocationBtn"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:text="Get Current Location"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/txtText"
+        android:layout_alignLeft="@+id/btnSpeak"
+        android:layout_alignStart="@+id/btnSpeak" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,6 +49,15 @@
         android:id="@+id/lcoationtextView"
         android:layout_below="@+id/getLocationBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Text to Speech"
+        android:id="@+id/speechbutton"
+        android:layout_below="@+id/lcoationtextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
 
 </RelativeLayout>
